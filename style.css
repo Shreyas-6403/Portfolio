@@ -1218,41 +1218,6 @@ p {
 		height: 100%;
 	}
 	/*End Project Section*/
-
-	/*Work Experience Section*/
-	.experience .container {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 20px 10px;
-		margin-bottom: 30px;
-		height: auto; /* Ensure flexible height */
-		overflow: visible; /* Prevent overflow from cutting off content */
-	}
-
-	.experience .logo img {
-		margin-bottom: 10px;
-		width: 100%;
-		max-width: 150px; /* Keeps image manageable on mobile */
-	}
-
-	.dialogue-box-left::after,
-	.dialogue-box-right::after {
-		display: none;
-	}
-
-	.experience .dialogue-box {
-		width: 90%;
-		margin-bottom: 20px;
-		text-align: center;
-		padding: 15px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		border-radius: 8px;
-		background-color: #f9f9f9;
-	}
-	/*End Work Experience Section*/
-
 }
 /* End Media Query For Tablet */
 
@@ -1305,5 +1270,6 @@ p {
 	.edu-content p {
 		font-size: 1.2rem;
 	}
+	
 }
 /* End  Media Query For Desktop */
