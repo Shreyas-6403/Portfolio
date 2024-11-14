@@ -474,8 +474,7 @@ p {
 
 /*End Skills section*/
 
-/* Services Section */
-
+/* Education Section */
 
 /* Education Section Styles */
 #education {
@@ -492,7 +491,7 @@ p {
   
   .section-title {
 	font-size: 2.5rem;
-	color: #4a4e69;
+	color: #000000;
 	margin-bottom: 10px;
   }
   
@@ -575,8 +574,7 @@ p {
 	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow for clarity */
   }
 
-/* End of services section*/
-
+/* End of Education section*/
 
 /* Projects section */
 
@@ -779,135 +777,8 @@ p {
 }
 /* End Projects section */
 
-/* contact Section */
-#contact .contact {
-	flex-direction: column;
-	max-width: 1200px;
-	margin: 0 auto;
-	width: 90%;
-}
-#contact .contact-items {
-	/* max-width: 400px; */
-	width: 100%;
-}
-#contact .contact-item {
-	width: 80%;
-	padding: 20px;
-	text-align: center;
-	border-radius: 10px;
-	padding: 30px;
-	margin: 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	box-shadow: 0px 0px 18px 0 #0000002c;
-	transition: 0.3s ease box-shadow;
-}
-#contact .contact-item:hover {
-	box-shadow: 0px 0px 5px 0 #0000002c;
-}
-#contact .icon {
-	width: 70px;
-	margin: 0 auto;
-	margin-bottom: 10px;
-}
-#contact .contact-info h1 {
-	font-size: 2.5rem;
-	font-weight: 500;
-	margin-bottom: 5px;
-}
-#contact .contact-info h2 {
-	font-size: 1.3rem;
-	line-height: 2rem;
-	font-weight: 500;
-}
-/*End contact Section */
-
-/* Keyframes */
-@keyframes hamburger_puls {
-	0% {
-		opacity: 1;
-		transform: scale(1);
-	}
-	100% {
-		opacity: 0;
-		transform: scale(1.4);
-	}
-}
-@keyframes text_reveal_box {
-	50% {
-		width: 100%;
-		left: 0;
-	}
-	100% {
-		width: 0;
-		left: 100%;
-	}
-}
-@keyframes text_reveal {
-	100% {
-		color: white;
-	}
-}
-@keyframes text_reveal_name {
-	100% {
-		color: crimson;
-		font-weight: 500;
-	}
-}
-/* End Keyframes */
-
-/* Media Query For Tablet */
-@media only screen and (min-width: 768px) {
-	.cta {
-		font-size: 2.5rem;
-		padding: 20px 60px;
-	}
-	h1.section-title {
-		font-size: 6rem;
-		color: #000000;
-	}
-
-	/* Hero */
-	#hero h1 {
-		font-size: 7rem;
-	}
-	/* End Hero */
-
-	/* Services Section */
-	#services .service-bottom .service-item {
-		flex-basis: 45%;
-		margin: 2.5%;
-	}
-	/* End Services Section */
-
-	/* Project */
-	#projects .project-item {
-		flex-direction: row;
-	}
-	#projects .project-item:nth-child(even) {
-		flex-direction: row-reverse;
-	}
-	#projects .project-item {
-		height: 400px;
-		margin: 0;
-		width: 100%;
-		border-radius: 0;
-	}
-	#projects .all-projects .project-info {
-		height: 100%;
-	}
-	#projects .all-projects .project-img {
-		height: 100%;
-	}
-	/* End Project */
-
-
 
 /* Experience Section Starts */
-
-
 .experience .container.left::before,
 .experience .container.right::before {
   content: "";
@@ -918,14 +789,12 @@ p {
 }
 
 .experience .container.left::before {
-  content: "2023"; /* Year for Internpe */
   top: 190px; /* Position the year above the card */
   right: 10%;
   transform: translateX(-50%);
 }
 
 .experience .container.right::before {
-  content: "2024"; /* Year for UI/UX */
   top: 190px; /* Position the year above the card */
   left: 10%;
   transform: translateX(-50%);
@@ -1065,43 +934,13 @@ p {
 	transform: perspective(500px) rotateY(-8deg) translateY(-5px) scale(1.05); /* Increased rotation, slight lift, and scaling */
 	transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
   }
-  
-
-/* Remove Hover Effect */
-.experience .content:hover {
-  transform: none;
-}
-
-/* Remove Year Label Above Cards */
-.experience .year-branch {
-  display: none; /* Remove the year label */
-}
-
-/* Responsive Design */
-@media screen and (max-width: 600px) {
-  .experience .container {
-    width: 100%;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .experience .logo img {
-    margin-bottom: 10px;
-  }
-
-  .dialogue-box-left::after,
-  .dialogue-box-right::after {
-    display: none;
-  }
-}
-
 /* Experience Section Ends */
 
 
-	/* Certificate Section with footer merged */
-	
-	#certificate-section {
+/* Certificate Section with footer merged */	
+#certificate-section {
 	padding: 0 auto;
+	margin-top: 120px;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	color: #fff;
 	text-align: center;
@@ -1117,7 +956,7 @@ p {
   
   	.section-title {
 	font-size: 2.5rem;
-	color: #fff;
+	color: #000000;
   	}
   
 	.certificate-cards {
@@ -1203,8 +1042,60 @@ p {
   .social-item:hover img {
 	filter: grayscale(0);
   	}
-
   /*End of merge section*/
+
+
+/* Keyframes */
+@keyframes hamburger_puls {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+}
+@keyframes text_reveal_box {
+	50% {
+		width: 100%;
+		left: 0;
+	}
+	100% {
+		width: 0;
+		left: 100%;
+	}
+}
+@keyframes text_reveal {
+	100% {
+		color: white;
+	}
+}
+@keyframes text_reveal_name {
+	100% {
+		color: crimson;
+		font-weight: 500;
+	}
+}
+/* End Keyframes */
+
+
+/* Media Query For Tablet */
+@media only screen and (min-width: 768px) {
+	.cta {
+		font-size: 2.5rem;
+		padding: 20px 60px;
+	}
+	h1.section-title {
+		font-size: 6rem;
+		color: #000000;
+	}
+
+	/* Hero */
+	#hero h1 {
+		font-size: 7rem;
+	}
+	/* End Hero */
 
 	/* About */
 	#about .about {
@@ -1230,8 +1121,141 @@ p {
 		text-align: left;
 	}
 	/* End About */
+
+	/* Education Section */
+	#education {
+		padding: 50px 0;
+		background: linear-gradient(to right, #ffffff, #ffffff);
+		text-align: center;
+	}
+
+	.education-container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 20px;
+	}
+
+	.section-title {
+		font-size: 2.5rem;
+		color: #000000;
+		margin-bottom: 10px;
+	}
+
+	.section-title span {
+		color: #dc143c;
+	}
+
+	.section-subtitle {
+		font-size: 1.2rem;
+		color: #000000;
+		margin-bottom: 30px;
+	}
+
+	.edu-card {
+		display: flex;
+		align-items: center;
+		margin: 20px auto;
+		padding: 20px;
+		background: rgba(255, 255, 255, 0.2);
+		box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(10px);
+		border-radius: 15px;
+		max-width: 1000px;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.edu-card:hover {
+		transform: scale(1.05);
+		box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+	}
+
+	.edu-image {
+		flex: 1;
+		max-width: 250px;
+		height: auto;
+		border-radius: 15px;
+		object-fit: cover;
+		margin-right: 20px;
+	}
+
+	.edu-content {
+		flex: 2;
+		text-align: left;
+	}
+
+	.edu-content h2 {
+		font-size: 1.8rem;
+		color: #333;
+		margin-bottom: 10px;
+	}
+
+	.edu-content p {
+		font-size: 1.1rem;
+		color: #2c3e50;
+		font-weight: 500;
+		line-height: 1.5;
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	}
+	/* End Education Section */
+
+	/* Project Section*/
+	#projects .project-item {
+		flex-direction: row;
+	}
+	#projects .project-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	#projects .project-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	#projects .all-projects .project-info {
+		height: 100%;
+	}
+	#projects .all-projects .project-img {
+		height: 100%;
+	}
+	/*End Project Section*/
+
+	/*Work Experience Section*/
+	.experience .container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 20px 10px;
+		margin-bottom: 30px;
+		height: auto; /* Ensure flexible height */
+		overflow: visible; /* Prevent overflow from cutting off content */
+	}
+
+	.experience .logo img {
+		margin-bottom: 10px;
+		width: 100%;
+		max-width: 150px; /* Keeps image manageable on mobile */
+	}
+
+	.dialogue-box-left::after,
+	.dialogue-box-right::after {
+		display: none;
+	}
+
+	.experience .dialogue-box {
+		width: 90%;
+		margin-bottom: 20px;
+		text-align: center;
+		padding: 15px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		border-radius: 8px;
+		background-color: #f9f9f9;
+	}
+	/*End Work Experience Section*/
+
 }
 /* End Media Query For Tablet */
+
 
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
@@ -1257,9 +1281,29 @@ p {
 	}
 	/* End header */
 
-	#services .service-bottom .service-item {
-		flex-basis: 22%;
-		margin: 1.5%;
+	/* Education Section for Desktop */
+	#education {
+		padding: 60px 0;
+	}
+
+	.edu-card {
+		max-width: 1200px;
+		padding: 30px;
+		margin: 25px auto;
+	}
+
+	.edu-image {
+		max-width: 300px;
+		margin-right: 30px;
+	}
+
+	.edu-content h2 {
+		font-size: 2rem;
+		margin-bottom: 12px;
+	}
+
+	.edu-content p {
+		font-size: 1.2rem;
 	}
 }
 /* End  Media Query For Desktop */
